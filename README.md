@@ -1,27 +1,73 @@
-# TrelloClone
+========
+Angular CDK
+========
+component dev kit
+hace parte de la parte del ecosistema Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Material design ya diseñado por google
+otras compañias tiene su sistema de diseño
+Carbon Design System de IBM
 
-## Development server
+CDK,andamiaje de crear la gran aplicación
+existen varial librearias 
+ionic,primeNg ng bootstrap wijmo, material, kendo UI, Clarity
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+el CDK es agnostico, no tiene un estilo visual definido es una serie de 
+	funcialiedades
+	servidios
+sin un estilo "opinionado"
 
-## Code scaffolding
+========
+Instalando Angular CDK y TailwindCSS
+========
+tailwindcss es un nuevo framework de css, como bootstrap 
+a partir de utilidades clases se podra hacerla maquetación
+no se escribe mucho css, es mucho más verbose, utilizar buenas practicas se puede jugar con el playgroudn
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng new trello-clone
+... add angular routing? yes
+SCSS ->sass
 
-## Build
+si no te sale el modo interactivo colocar:
+ng new trello-clone --routing --style=scss
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+install tailwind
 
-## Running unit tests
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-config tailwind.config.js
+content: [
+    "./src/**/*.{html,ts}",
+  ],
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ -addind to Css
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
 
-## Further help
+-in app.component.html
+<h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
+-install extension tailwind css intellisence
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-instalar angular cdk
+ng add @angular/cdk
+
+angular cdk para la parte interactiva
+
+========
+Maquetando la pagina de login con tailwind
+========
+-logo library
+https://atlassian.design/resources/logo-library
+
+atlassian dueña de jira,bitbucket,trello y otros
+
+-fondos
+https://undraw.co/illustrations
+
+-crear la pagina de login
+ng g c pages/login --style=none --skip-tests
