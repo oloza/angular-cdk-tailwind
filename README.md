@@ -71,3 +71,28 @@ https://undraw.co/illustrations
 
 -crear la pagina de login
 ng g c pages/login --style=none --skip-tests
+========
+Maquetando el formulariod
+========
+-hay algo con los formulario en tailwind no es ????
+-hay un plugin para los formulario en tailwind no viene incorporado
+	npm install -D @tailwindcss/forms
+
+px-2 py-3  -> padding
+
+========
+Creando Btn Component
+========
+- crear un componente que se pueda reutilizar en toda la aplicación
+ejemp
+<button class="bg-blue-500 text-white px-2 py-3 rounded">
+
+- para responsive tailwind utiliza mediaQuery
+sm:bg-gray-50  (small devices)
+lg:w-96	(large devices)
+- cear un componente para el boton
+ng g c components/btn --style=none --skip-tests
+
+-en el componete coloar el código de boton junto con
+<ng-content></ng-content>
+
