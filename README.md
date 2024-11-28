@@ -95,3 +95,16 @@ ng g c components/btn --style=none --skip-tests
 
 -en el componete coloar el código de boton junto con
 <ng-content></ng-content>
+- en el componente boton puedes usar  union Type de Typescript
+	 @Input() typeBtn: 'button' | 'reset' | 'submit' = 'button'; 
+- extender colores de tailwind.config.js usando un alias con mas sentido para el developer
+		theme: {
+			extend: {
+			colors: {
+				success: colors.green,
+				primary: colors.blue
+			}
+			},
+		},
+
+-puedes debugear con el Angular DevTools
