@@ -95,4 +95,3 @@ ng g c components/btn --style=none --skip-tests
 
 -en el componete coloar el código de boton junto con
 <ng-content></ng-content>
-
