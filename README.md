@@ -108,3 +108,20 @@ ng g c components/btn --style=none --skip-tests
 		},
 
 -puedes debugear con el Angular DevTools
+
+========
+Reto: Dynamic Colors
+========
+-caractersisticas que hacen Tailwind 
+	hace un limpiado en el bundle
+	lee el html y typescript y solo utiliza los estilos escritos sin css extra
+
+	desventajas, 
+	de los html y typescript, no reconoce las clases dinamicas  
+	una solución es concatenar pero no funciona por que lo hace en tiempo de ejecución
+-se debe crear un diccionario explicitopara los colores
+	get colors(){
+		return {
+		'bg-success-700':this.color==='success',
+		'bg-primary-700':this.color==='primary',
+		'bg-red-700':this.color==='red', 
