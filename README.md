@@ -125,3 +125,29 @@ Reto: Dynamic Colors
 		'bg-success-700':this.color==='success',
 		'bg-primary-700':this.color==='primary',
 		'bg-red-700':this.color==='red', 
+
+=============
+Creando Overlays
+=============
+tailwind maquetado stilos
+cdk la interaccion
+
+overlay:
+	son esos elementos estan flotando en nuestra aplicacio´n,
+	ejm. en trello 
+		-como menu flotante
+		-el menu principal es un tipo de overlay
+		-para adminsitrar los estados como menu emergente
+
+ng g c pages/boards --skip-tests --style=none
+ng g c components/navBar --skip-tests --style=none
+
+-para utilizar cdk
+	material.angular.io->CDK
+	imoprtar overlay en styles.scss
+	@import '@angular/cdk/overlay-prebuilt.css';
+	en app-module
+	import {OverlayModule} from '@angular/cdk/overlay';
+
+	cdk es agnositico no se mete con como se ve si no con la interacción
+	
