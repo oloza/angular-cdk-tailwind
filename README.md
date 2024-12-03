@@ -151,3 +151,16 @@ ng g c components/navBar --skip-tests --style=none
 
 	cdk es agnositico no se mete con como se ve si no con la interacción
 	
+=============
+iconos
+=============
+-usaremos font awesome
+-ng add @fortawesome/angular-fontawesome
+	ℹ Using package manager: npm
+	? Choose Font Awesome version you would like to use: Font Awesome 6
+	? Choose Font Awesome icon packages you would like to use: Free Solid Icons, Free   
+	Brands Icons
+- en app.module está el modulo de font awesome importado
+	FontAwesomeModule
+-importar el icono que se quiere utiliar(explicitamente)
+	
