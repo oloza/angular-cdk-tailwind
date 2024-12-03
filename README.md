@@ -1,6 +1,10 @@
 ========
 Angular CDK
 ========
+boilerPlate:
+	https://gist.github.com/nicobytes/92f050c77c8c8e5be63e97c1ae0b9c83#accordion
+
+
 component dev kit
 hace parte de la parte del ecosistema Angular
 
@@ -164,3 +168,9 @@ iconos
 	FontAwesomeModule
 -importar el icono que se quiere utiliar(explicitamente)
 	
+=============
+acordeon 
+=============	
+-funcion de expandir y contraer
+-en angular material io cdk accordion
+	https://material.angular.io/cdk/accordion/overview
