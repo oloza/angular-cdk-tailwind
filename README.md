@@ -3,7 +3,8 @@ Angular CDK
 ========
 boilerPlate:
 	https://gist.github.com/nicobytes/92f050c77c8c8e5be63e97c1ae0b9c83#accordion
-
+cdk
+https://material.angular.io/cdk/accordion/overview
 
 component dev kit
 hace parte de la parte del ecosistema Angular
@@ -175,6 +176,7 @@ acordeon
 -en angular material io cdk accordion
 	https://material.angular.io/cdk/accordion/overview
 
+
 =============
 acordeon dinamico
 =============	
@@ -188,4 +190,12 @@ acordeon dinamico
               </div>
         </cdk-accordion-item>
 </cdk-accordion>
+
+=============
+drag and drop
+=============	
+-crear un una nueva pagina
+ng g c pages/board --skip-tests --style=none
+
+import { CdkDragDrop,moveItemInArray } from '@angular/cdk/drag-drop';
 

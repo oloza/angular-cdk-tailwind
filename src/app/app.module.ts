@@ -10,6 +10,8 @@ import { BoardsComponent } from './pages/boards/boards.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { BoardComponent } from './pages/board/board.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     LoginComponent,
     BtnComponent,
     BoardsComponent,
-    NavbarComponent
+    NavbarComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
     OverlayModule,
     AppRoutingModule,
     FontAwesomeModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
