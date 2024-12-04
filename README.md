@@ -175,3 +175,17 @@ acordeon
 -en angular material io cdk accordion
 	https://material.angular.io/cdk/accordion/overview
 
+=============
+acordeon dinamico
+=============	
+<cdk-accordion>
+        <cdk-accordion-item #accordionNombre="cdkAccordionItem" *ngFor="let item of items">
+          <button class="w-full text-left" type="button" (click)="accordionNombre.toggle()">{{ item.label }}</button>
+              <div [style.display]="accordionNombre.expanded ? '' : 'none'">
+                <ul>
+                  <li class="ml-2" *ngFor="let subItem of item.items">{{ subItem.label }}</li>
+                </ul>
+              </div>
+        </cdk-accordion-item>
+</cdk-accordion>
+
