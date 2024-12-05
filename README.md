@@ -220,3 +220,19 @@ columnas dinámicas
 - el alto
 	flex flex-col h-full
 	
+=============
+modales dialogos
+=============	
+-importar en el module
+	import{dialogModule} from '@angular/cdk/dialog';
+
+-crear un componente dialogo
+	ng g c components/todo-dialog --style=none --skip-tests
+
+-en el componente se importa como servicio  e inyectarlo 
+	import { Dialog } from '@angular/cdk/dialog';
+
+-para abrir el dialog  
+	this.dialog.open(TodoDialogComponent,{
+		minWidth:'300px',
+	})
