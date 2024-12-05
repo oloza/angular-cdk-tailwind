@@ -209,3 +209,14 @@ transferencia entre columnas
 -en cada columna agregar [cdkDropListData]="lista"
 -para transferir entre columnas se debe importar:
 	transferArrayItem
+
+=============
+columnas dinámicas
+=============	
+-para manter el ancho de la columna y sea fia usar:
+	shrink-0
+-para el scroll horizontal:
+	overflow-x-scroll
+- el alto
+	flex flex-col h-full
+	
