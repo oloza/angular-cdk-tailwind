@@ -199,3 +199,13 @@ ng g c pages/board --skip-tests --style=none
 
 import { CdkDragDrop,moveItemInArray } from '@angular/cdk/drag-drop';
 
+
+=============
+transferencia entre columnas
+=============	
+-una lista por cada columna
+-para mover entre columnas se necesita la directiva
+	cdkDropListGroup
+-en cada columna agregar [cdkDropListData]="lista"
+-para transferir entre columnas se debe importar:
+	transferArrayItem
