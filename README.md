@@ -236,3 +236,17 @@ modales dialogos
 	this.dialog.open(TodoDialogComponent,{
 		minWidth:'300px',
 	})
+
+=============
+enviar info dialogs
+=============	
+-en el metodo dialog.open enviar la data
+	this.dialog.open(TodoDialogComponent,{
+		minWidth:'300px',
+		data:todo
+	})
+
+injectar
+
+--pen in closeWithRta(rta:boolean){  -2.20
+  

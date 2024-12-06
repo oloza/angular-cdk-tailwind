@@ -41,17 +41,17 @@ ngOnInit(): void {
     {
       title:'Doing',
       todos:[
-        {id:'1',title:'todo 1'},
-        {id:'2',title:'todo 2'},
-        {id:'3',title:'todo 3'},
+        {id:'1',title:'Doing 1'},
+        {id:'2',title:'Doing 2'},
+        {id:'3',title:'Doing 3'},
       ]
     },
     {
       title:'Done',
       todos:[
-        {id:'1',title:'todo 1'},
-        {id:'2',title:'todo 2'},
-        {id:'3',title:'todo 3'},
+        {id:'1',title:'Done 1'},
+        {id:'2',title:'Done 2'},
+        {id:'3',title:'Done 3'},
       ]
     }
 
@@ -106,11 +106,16 @@ addColumn(){
   })
 }
 
-openDialog(){
-  this.dialog.open(TodoDialogComponent,{
-    minWidth:'300px',
-    maxWidth:'50%',
-    autoFocus:false,
+openDialog(todo:ToDo){
+  const dialogRef = this.dialog.open(TodoDialogComponent, {
+    minWidth: '300px',
+    maxWidth : '50%',
+    data: {
+      todo: todo,
+    }
+  });
+  dialogRef.closed.subscribe(output => {
+    console.log(output);
   })
 }
 
