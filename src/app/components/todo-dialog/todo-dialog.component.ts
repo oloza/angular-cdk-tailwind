@@ -43,7 +43,7 @@ ngOnInit(): void {
   }
 
   closeWithRta(rta:boolean){
-  
+    this.dialogRef.close({rta})
   }
 
 }
