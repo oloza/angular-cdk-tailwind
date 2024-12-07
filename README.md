@@ -266,3 +266,15 @@ ng g c components/virtual-scroll --style=none --skip-tests
 -camb la forma de lop 
 <cdk-virtual-scroll-viewport itemSize="50">
 cdkVirtualFor instead of ngFor
+
+
+=============
+virtual Scrolling
+=============	
+-modulo
+	CdkTableModule
+-componente
+	ng g c pages/table --style=none --skip-tests
+-etiqueta table en Html
+	<table cdk-table [dataSource]="products">
+-crear primero las columnas

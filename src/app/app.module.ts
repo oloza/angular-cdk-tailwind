@@ -3,6 +3,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {DialogModule} from '@angular/cdk/dialog';
+import {CdkTableModule} from '@angular/cdk/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 import { ScrollComponent } from './pages/scroll/scroll.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { TableComponent } from './pages/table/table.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     BoardComponent,
     TodoDialogComponent,
     ScrollComponent,
-    
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     DragDropModule,
     DialogModule,
     HttpClientModule,
-    ScrollingModule
+    CdkTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
