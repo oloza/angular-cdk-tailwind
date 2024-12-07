@@ -249,4 +249,12 @@ enviar info dialogs
 injectar
 
 --pen in closeWithRta(rta:boolean){  -2.20
-  
+
+=============
+virtual Scrolling
+=============	
+-si tienes muchos elementos en un combo puede ser no performante
+-ahi se utiliza virtual scroll para optimizar el rendimiento se renderiza cierta cantidad de datos 
+ng g c components/virtual-scroll --style=none --skip-tests
+
+-usar una fakeapi 200 prod	
