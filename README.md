@@ -258,3 +258,11 @@ virtual Scrolling
 ng g c components/virtual-scroll --style=none --skip-tests
 
 -usar una fakeapi 200 prod	
+
+-importar en el modulo
+	import {virtualScroll} from '@angular/cdk/scrolling';
+-en el html la etiqueta:
+-los elementos tienen que tener un tamaño obligatorio
+-camb la forma de lop 
+<cdk-virtual-scroll-viewport itemSize="50">
+cdkVirtualFor instead of ngFor
